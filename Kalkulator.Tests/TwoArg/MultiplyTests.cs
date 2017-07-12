@@ -1,5 +1,4 @@
-﻿using Kalkulator.TwoArg;
-using NUnit.Framework;
+﻿using NUnit.Framework;
 
 namespace Kalkulator.Tests.TwoArg
 {

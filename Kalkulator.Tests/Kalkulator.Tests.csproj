@@ -43,23 +43,30 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="OneArg\CosinusTests.cs" />
+    <Compile Include="OneArg\XtoThePowerTwoTests.cs" />
+    <Compile Include="OneArg\SinusTests.cs" />
+    <Compile Include="OneArg\TangensTests.cs" />
+    <Compile Include="OneArg\TwoToThePowerXTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="TwoArg\AdditionTests.cs" />
     <Compile Include="TwoArg\DivisionTests.cs" />
+    <Compile Include="TwoArg\LogXfromYTests.cs" />
+    <Compile Include="TwoArg\MaxXYTests.cs" />
+    <Compile Include="TwoArg\MinXYTests.cs" />
     <Compile Include="TwoArg\MultiplyTests.cs" />
     <Compile Include="TwoArg\SubtractionTests.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\kalkulatorvor-master\Kalkulator.csproj">
-      <Project>{18b2c242-1581-4a1e-9ff0-c400394cad38}</Project>
-      <Name>Kalkulator</Name>
-    </ProjectReference>
+    <Compile Include="TwoArg\Xpow1dYTests.cs" />
+    <Compile Include="TwoArg\ХtoThePowerYTests.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="OneArg\" />
+    <ProjectReference Include="..\Kalkulator.csproj">
+      <Project>{18b2c242-1581-4a1e-9ff0-c400394cad38}</Project>
+      <Name>Kalkulator</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

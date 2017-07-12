@@ -3,16 +3,16 @@
 namespace Kalkulator.Tests.TwoArg
 {
     [TestFixture]
-    public class AdditionTests
+    public class MaxXYTests
     {
         [Test]
-        public void AdditionTest()
+        public void MaxXYTest()
         {
-            var calc=new Addition();
-            double first = 2;
+            var calc = new MaxXY();
+            double first = 31;
             double second = 2;
             double result = calc.Calculate(first, second);
-            Assert.AreEqual(4,result);
+            Assert.AreEqual(31, result);
         }
     }
 }

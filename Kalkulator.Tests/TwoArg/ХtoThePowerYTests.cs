@@ -3,16 +3,16 @@
 namespace Kalkulator.Tests.TwoArg
 {
     [TestFixture]
-    public class AdditionTests
+    public class ХtoThePowerYTests
     {
         [Test]
-        public void AdditionTest()
+        public void ХtoThePowerYTest()
         {
-            var calc=new Addition();
+            var calc = new ХtoThePowerY();
             double first = 2;
             double second = 2;
             double result = calc.Calculate(first, second);
-            Assert.AreEqual(4,result);
+            Assert.AreEqual(4, result);
         }
     }
 }
