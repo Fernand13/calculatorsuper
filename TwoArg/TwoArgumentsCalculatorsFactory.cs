@@ -2,8 +2,16 @@
 
 namespace Kalkulator.TwoArg
 {
+    /// <summary>
+    /// Interface for factory
+    /// </summary>
     public static class TwoArgumentsCalculatorsFactory
     {
+        /// <summary>
+        /// Method for factory
+        /// </summary>
+        /// <param name="first">Input value</param>
+        /// <returns>Calculated value</returns>
         public static ITwoArgumentsOperation CreateCalculator (string calculatorName)
         {
             switch (calculatorName)
