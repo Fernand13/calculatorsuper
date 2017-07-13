@@ -1,4 +1,4 @@
-﻿namespace Kalkulator
+﻿namespace Kalkulator.OneArg
 {
     public interface IOneArgumentsOperation
     {

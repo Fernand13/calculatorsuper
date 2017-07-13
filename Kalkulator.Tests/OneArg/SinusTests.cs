@@ -1,17 +1,19 @@
-﻿using NUnit.Framework;
+﻿using Kalkulator.OneArg;
+using NUnit.Framework;
 
 namespace Kalkulator.Tests.OneArg
 {
     [TestFixture]
     public class SinusTests
     {
-        [Test]
-        public void SinusTest()
+        [TestCase(0, 0)]
+        [TestCase(35, -0.42818266949615102)]
+        [TestCase(90, 0.89399666360055785)]
+        public void SinusTest(double first, double expected)
         {
             var calc = new Sinus();
-            double first = 0;
             double result = calc.Calculate(first);
-            Assert.AreEqual(0, result);
+            Assert.AreEqual(expected, result);
         }
     }
 }

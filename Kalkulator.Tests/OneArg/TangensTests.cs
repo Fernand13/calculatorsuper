@@ -1,17 +1,19 @@
-﻿using NUnit.Framework;
+﻿using Kalkulator.OneArg;
+using NUnit.Framework;
 
 namespace Kalkulator.Tests.OneArg
 {
     [TestFixture]
     public class TangensTests
     {
-        [Test]
-        public void TangensTest()
+        [TestCase(0,0)]
+        [TestCase(45, 1.6197751905438615)]
+        [TestCase(135, -0.088715756770060453)]
+        public void TangensTest(double first, double expected)
         {
             var calc = new Tangens();
-            double first = 0;
             double result = calc.Calculate(first);
-            Assert.AreEqual(0, result);
+            Assert.AreEqual(expected, result);
         }
     }
 }

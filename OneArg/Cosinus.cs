@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Kalkulator
+namespace Kalkulator.OneArg
 {
     public class Cosinus : IOneArgumentsOperation
     {
